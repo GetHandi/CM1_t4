@@ -9,6 +9,7 @@ using namespace std;
 
 void PrintMatrix(double* ptr[], const unsigned char SIZE_R, const unsigned char SIZE_C)
 {
+	cout << "Matrix:\n";
 	for (int i = 0; i < SIZE_R; i++) {
 		for (int j = 0; j < SIZE_C; j++) {
 			cout << setw(9) << ptr[i][j] << " ";
@@ -80,7 +81,7 @@ int main()
 		}
 
 		// вывод промежуточного результата в консоль;
-		cout << k + 1 << ") " << "Interim result:\n";
+		cout << k << ") " << "Interim result:\n";
 		for (int i = 0; i < SIZE; i++)
 		{
 			cout << setw(9) << "x" << i + 1 << " = " << result[i] << endl;
